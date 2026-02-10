@@ -1,0 +1,135 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Background Image with Overlay */
+.main-container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                      url('https://assets.nflxext.com/ffe/siteui/vlv3/f841d4c7-10e1-40af-bca1-07e3f8eb14af/8a304953-ad6d-4c49-81d3-87f730870d02/IN-en-20220502-popsignuptwoweeks-perspective_alpha_website_medium.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 0 8%;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+}
+
+.logo {
+    width: 150px;
+    cursor: pointer;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.language-btn {
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: 1px solid #aaa;
+    padding: 5px 15px;
+    border-radius: 4px;
+}
+
+.signin-btn {
+    background-color: #db0000;
+    color: white;
+    border: none;
+    padding: 7px 17px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero-content {
+    text-align: center;
+    margin-top: 150px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.email-signup {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.email-signup input {
+    width: 400px;
+    padding: 15px;
+    background: rgba(0,0,0,0.5);
+    border: 1px solid #555;
+    color: white;
+    font-size: 1rem;
+    border-radius: 4px;
+}
+
+.email-signup button {
+    background-color: #db0000;
+    color: white;
+    border: none;
+    padding: 0 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Feature Row */
+.feature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 70px 10%;
+    border-top: 8px solid #222;
+}
+
+.feature-text {
+    flex: 1;
+}
+
+.feature-text h2 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.feature-text p {
+    font-size: 1.5rem;
+}
+
+.feature-img {
+    flex: 1;
+    text-align: right;
+}
+
+.feature-img img {
+    width: 90%;
+}
