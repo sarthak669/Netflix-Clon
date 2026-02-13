@@ -1,45 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix Clone</title>
+    <title>Flipkart Clone</title>
+    <!-- <link rel="icon" href="logo.png"> -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    <div class="main-container">
-        <nav class="navbar">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" class="logo" alt="Netflix Logo">
-            <div class="nav-buttons">
-                <select class="language-btn">
-                    <option>English</option>
-                    <option>हिन्दी</option>
-                </select>
-                <button class="signin-btn">Sign In</button>
-            </div>
-        </nav>
 
-        <div class="hero-section">
-            <div class="hero-content">
-                <h1>Unlimited movies, TV shows and more</h1>
-                <p>Starts at ₹149. Cancel at any time.</p>
-                <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
-                <div class="email-signup">
-                    <input type="email" placeholder="Email address">
-                    <button>Get Started ></button>
+    <!-- NAVBR -->
+    <header class="navbar">
+        <h2 class="logo" style="font-weight: 900; font-size: 30px;  margin-left: 45px ;">Flipkart</h2>
+        <input type="text" placeholder="Search for products, brands and more " style="font-size: 17px;">
+        <div class="nav-links">
+            <a href="#"> <button
+                    style="height: 45px; width: 80px; color: #4e8ef5 ; font-size: 15px; background-color: white; border: 1px solid rgb(215, 212, 212); border-radius: 4px; "><b>Login
+                    </b></button></a>
+            <a href="#">Become a Seller</a>
+            <a href="#"> More <i class="fa-solid fa-caret-down"></i></a>
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+        </div>
+    </header>
+
+
+    <!-- CATEGORY BAR -->
+    <section class="categories">
+        <div class="cat">Mobiles</div>
+        <div class="cat">TVs & Appliances</div>
+        <div class="cat">Electronics</div>
+        <div class="cat">Fashion</div>
+        <div class="cat">Home</div>
+        <div class="cat">Beauty</div>
+        <div class="cat">Furniture</div>
+        <div class="cat">Grocery</div>
+    </section>
+
+    <!-- BANNER -->
+    <section class="banner" ;>
+        <h1>Top Selling Smartphones</h1>
+        <p>Latest Technology, Best Brands</p>
+        <button id="button">Explore Now</button>
+
+    </section>
+
+    <!-- <div class="section1" style="height: 300px;">
+    <img src="https://rukminim2.flixcart.com/fk-p-flap/50/50/image/f6d3993a81ed642c.jpg?q=50" alt="">
+  </div> -->
+
+
+
+    <!-- BEST DEALS -->
+    <section class="products">
+        <h2>Best deals on smartphones</h2>
+        <div class="product-grid">
+            <div class="card">
+                <img
+                    src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/o/l/2/-original-imahgfmzvanpgncf.jpeg?q=70">
+                <p>iPhone 16</p>
+                <span>From ₹55,999</span>
+            </div>
+            <div class="card">
+                <img
+                    src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/j/t/v/-original-imahavdv28z4nrkn.jpeg?q=70">
+                <p>Vivo T4x 5G</p>
+                <span>From ₹14,999</span>
+            </div>
+            <div class="card">
+                <img
+                    src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/u/r/t/-original-imahfw4ahyk6qfxe.jpeg?q=70">
+                <p>Galaxy S24 FE</p>
+                <span>From ₹31,999</span>
+            </div>
+            <div class="card">
+                <img
+                    src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/2/o/9/-original-imahgqnzt97efyph.jpeg?q=70">
+                <p>Moto G96 5G</p>
+                <span>From ₹17,999</span>
+            </div>
+            <div class="card">
+                <img
+                    src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/w/b/8/-original-imahfjsf5gxbpfks.jpeg?q=70">
+                <p>Google pixel 10 5G</p>
+                <span>From ₹77,999</span>
+            </div>
+            <div class="card">
+                <img
+                    src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/x/4/e/-original-imahggs43enf9dns.jpeg?q=70">
+                <p>Galaxy a56</p>
+                <span>From ₹37,999</span>
+            </div>
+            <div class="card">
+                <img
+                    src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/g/r/g/-original-imahgfmy4xfecrhg.jpeg?q=70">
+                <p>Galaxy S24 Ultra</p>
+                <span>From ₹107,999</span>
+            </div>
+            <div class="card">
+                <img
+                    src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/f/v/m/-original-imahft6chnx2vbuy.jpeg?q=70">
+                <p>Iphone 17pro max</p>
+                <span>From ₹124,999</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- APPLIANCES -->
+    <section class="appliances">
+        <h2>Appliances</h2>
+        <div class="appliance-grid">
+            <div>TVs</div>
+            <div>Kitchen</div>
+            <div>Refrigerators</div>
+            <div>Microwave</div>
+            <div>Geysers</div>
+        </div>
+    </section>
+
+    <section>
+
+
+
+  <div id="container">
+     <div class="card">
+                <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/television/j/p/s/-original-imahhea7zqgyrcfk.jpeg?q=70"
+                    height="130px;" width="50px">
+                <h3>Sony Bravia</h3>
+                <p id="price">price:&#8377;69000 <del id="dis">&#8377;999999</del></p>
+                <div id="add">Buy Now</div>
+                </p>
+            </div>
+
+    <div class="card">
+                <img
+                    src="https://rukminim2.flixcart.com/image/612/612/xif0q/gas-stove/6/y/a/2-lpg-12-5-familykitchenset9pcs-greenchef-41-5-manual-original-imahgud4yyadenzh.jpeg?q=70" />
+                <h3>greenchef carnival</h3>
+                <p>Family kitchen set</p>
+                <p id="price">price:&#8377;5000 <del id="dis">&#8377;9999</del></p>
+                <div id="add">Buy Now</div>
+                </p>
+            </div>
+
+
+    <div class="card">
+                <img
+                    src="https://rukminim2.flixcart.com/image/312/312/xif0q/refrigerator-new/u/u/d/-original-imahfpfxstxu5mws.jpeg?q=70" />
+                <h3>refrigerator</h3>
+                <p>Samsung 183 l2</p>
+                <p id="price">price:&#8377;16000 <del id="dis">&#8377;29999</del></p>
+                <div id="add">Buy Now</div>
+            </div>
+
+
+    <div class="card">
+                <img
+                    src="https://rukminim2.flixcart.com/image/312/312/xif0q/microwave-new/l/w/i/-original-imah8yu8efyjtyhg.jpeg?q=70" />
+                <h3>Microwave</h3>
+                <p>britannica 20 ltr</p>
+                <p id="price">price:&#8377;10000 <del id="dis">&#8377;19999</del></p>
+                <div id="add">Buy Now</div>
+                </p>
+            </div>
+
+
+    <div class="card">
+                <img
+                    src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/o/o/9/-original-imahggev6y5zhbjz.jpeg?q=70" />
+                <h3>Iphone 16 Pro </h3>
+                <p id="price">price:&#8377;69000 <del id="dis">&#8377;999999</del></p>
+                <div id="add">Buy Now</div>
+                </p>
+            </div>
+
+
+      <div class="card">
+                <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/tablet/x/q/4/-original-imahjsydjycrfjhu.jpeg?q=70"
+                    height="130px;" width="50px;" />
+                <h3>Samsung Tab</h3>
+                <p> Galaxy Tab</p>
+                <p id="price">price:&#8377;69000 <del id="dis">&#8377;999999</del></p>
+                <div id="add">Buy Now</div>
+                </p>
+            </div>
+
+
+      <div class="card">
+                <img
+                    src="https://rukminim2.flixcart.com/image/612/612/xif0q/washing-machine-new/w/7/a/-original-imah3ntaa7wjm3st.jpeg?q=70" />
+                <h3>Samsung Appliances</h3>
+
+                <p id="price">price:&#8377;69000 <del id="dis">&#8377;999999</del></p>
+                <div id="add">Buy Now</div>
+                </p>
+            </div>
+
+
+
+   <div class="card">
+                <img
+                    src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/n/v/e/-original-imahft5gfchxyewy.jpeg?q=70" />
+                <h3>iphone 17</h3>
+                <p> superfast charger</p>
+                <p id="price">price:&#8377;69000 <del id="dis">&#8377;999999</del></p>
+                <div id="add">Buy Now</div>
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section>
+        <div id="hr">
+            <div id="ofer">
+                <div id="box-container">
+                    <div id="quard">
+                        <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/n/v/e/-original-imahft5gfchxyewy.jpeg?q=70" height="260px;" width="100%;">
+                    </div>
+                    <div id="quard">
+                        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/washing-machine-new/k/8/5/-original-imahgy774gxkmxd9.jpeg?q=70" height="260px;" width="100%;">
+                    </div>
+                    <div id="quard">
+                        <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/r/s/g/-original-imahkkpg3hbtardn.jpeg?q=70" height="260px;" width="100%;">
+                    </div>
+                    <div id="quard">
+                        <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/7/n/l/-original-imahgfmzfgdzases.jpeg?q=70" height="270px;" width="100%;">
+                    </div>
+                    <div id="quard">
+                        <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/n/8/9/-original-imahgt9jhcm4t86y.jpeg?q=70" height="270px;" width="100%;">
+
+                    </div>
+                    <div id="quard">
+                        <img src="https://m.media-amazon.com/images/I/61OtOTTpzxL._AC_UL480_QL65_.jpg" height="250px;" width="100%;">
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
 
-    <section class="feature">
-        <div class="feature-text">
-            <h2>Enjoy on your TV</h2>
-            <p>Watch on smart TVs, PlayStation, Xbox, Apple TV, Blu-ray players and more.</p>
+            </div>
+
+
+
+            <div id="offer">
+                <img src="https://m.media-amazon.com/images/S/aplus-media-library-service-media/78977de8-dfc0-4ca7-9650-5d3cca3aa653.__CR0,0,1464,600_PT0_SX1464_V1___.jpg" height="550px;" width="100%;">
+            </div>
+
+
         </div>
-        <div class="feature-img">
-            <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="TV Feature">
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p> © 1996-2026, Myntra.com, Inc. or its affiliates </p>
+    </footer>
+
+</body>
+
+</html>
         </div>
     </section>
 </body>
+
 </html>
